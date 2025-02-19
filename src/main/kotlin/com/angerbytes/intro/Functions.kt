@@ -1,4 +1,4 @@
-package com.angerbytes
+package com.angerbytes.intro
 
 fun main(){
     print("10 + 20 = ${myMathFunction(10, 20)}")
