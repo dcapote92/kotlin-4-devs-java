@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.1.0"
+    kotlin("jvm") version "2.0.21"
 }
 
 group = "com.angerbytes"
@@ -9,7 +9,13 @@ repositories {
     mavenCentral()
 }
 dependencies {
+    // https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-reflect
+    runtimeOnly ("org.jetbrains.kotlin:kotlin-reflect:2.1.10")
+
     testImplementation(kotlin("test"))
+    implementation(kotlin("reflect"))
+
+
 }
 
 tasks.test {

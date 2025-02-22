@@ -1,9 +1,10 @@
-package com.angerbytes.poo.clases
+package com.angerbytes.advanceresources
 
 //class Person constructor( firstName: String, lastName: String) {
 //class Person ( firstName: String, lastName: String){
 
-class Person internal constructor( firstName: String, lastName: String){
+@Deprecated("Use the Animal class instead", ReplaceWith("Animal"))
+class Person3 internal constructor(firstName: String, lastName: String){
     init{
         println("Created a person named $firstName $lastName")
     }
